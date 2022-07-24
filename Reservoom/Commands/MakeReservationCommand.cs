@@ -1,5 +1,6 @@
 ﻿using Reservoom.Exceptions;
 using Reservoom.Models;
+using Reservoom.Services;
 using Reservoom.ViewModels;
 using System;
 using System.ComponentModel;
@@ -10,11 +11,13 @@ namespace Reservoom.Commands
     public class MakeReservationCommand : CommandBase
     {
         private readonly Hotel _hotel;
+        private readonly NavigationService _reservationViewNavigationService;
         private readonly MakeReservationViewModel _makeReservationViewModel;
 
-        public MakeReservationCommand(MakeReservationViewModel makeReservationViewModel ,Hotel hotel)
+        public MakeReservationCommand(MakeReservationViewModel makeReservationViewModel, Hotel hotel, NavigationService reservationViewNavigationService)
         {
             _hotel = hotel;
+            _reservationViewNavigationService = reservationViewNavigationService;
             _makeReservationViewModel = makeReservationViewModel;
 
             _makeReservationViewModel.PropertyChanged += OnViewModelPropertyChanged;
@@ -42,6 +45,8 @@ namespace Reservoom.Commands
 
                 MessageBox.Show("Successfully reserved room.", "Success",
                     MessageBoxButton.OK, MessageBoxImage.Information);
+
+                _reservationViewNavigationService.Navigation();
             }
             catch (ReservationConflictException)
             {
