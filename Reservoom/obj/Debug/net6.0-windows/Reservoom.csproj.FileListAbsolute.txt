@@ -19,3 +19,9 @@ J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\refint\Reservoo
 J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Reservoom.pdb
 J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Reservoom.genruntimeconfig.cache
 J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\ref\Reservoom.dll
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Views\MakeReservationView.g.cs
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Views\ReservationListingView.g.cs
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Views\MakeReservationView.baml
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\Views\ReservationListingView.baml
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\obj\Debug\net6.0-windows\App.baml

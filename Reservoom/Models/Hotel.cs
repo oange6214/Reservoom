@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Reservoom.Models
 {
@@ -18,13 +14,12 @@ namespace Reservoom.Models
         }
 
         /// <summary>
-        /// Get the reservations for a user.
+        /// Get all reservations.
         /// </summary>
-        /// <param name="userName">The userName of the user.</param>
-        /// <returns>The reservations for the user.</returns>
-        public IEnumerable<Reservation> GetReservationsForUser(string userName)
+        /// <returns>All reservation in the hotel reservation book.</returns>
+        public IEnumerable<Reservation> GetAllReservations()
         {
-            return _reservationBook.GetReservationsForUser(userName);
+            return _reservationBook.GetAllReservations();
         }
 
         /// <summary>
