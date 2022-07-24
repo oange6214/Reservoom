@@ -1,5 +1,5 @@
 ﻿Reservoom
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 J:\C#\NetCoreWebAPI\Reservoom\Reservoom\App.xaml
 11407045341
 
-10778769052
+81971312459
 194-1367339712
 MainWindow.xaml;
 
-True
+False
 
