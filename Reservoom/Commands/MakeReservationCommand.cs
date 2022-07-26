@@ -4,11 +4,12 @@ using Reservoom.Services;
 using Reservoom.ViewModels;
 using System;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace Reservoom.Commands
 {
-    public class MakeReservationCommand : CommandBase
+    public class MakeReservationCommand : AsyncCommand
     {
         private readonly Hotel _hotel;
         private readonly NavigationService _reservationViewNavigationService;
@@ -31,7 +32,7 @@ namespace Reservoom.Commands
                 base.CanExecute(parameter);
         }
 
-        public override void Execute(object? parameter)
+        public override async Task ExecuteAsync(object? parameter)
         {
             Reservation reservation = new Reservation(
                 new RoomID(_makeReservationViewModel.FloorNumber, _makeReservationViewModel.RoomNumber),
@@ -41,7 +42,7 @@ namespace Reservoom.Commands
                 );
             try
             {
-                _hotel.MakeReservation(reservation);
+                await _hotel.MakeReservation(reservation);
 
                 MessageBox.Show("Successfully reserved room.", "Success",
                     MessageBoxButton.OK, MessageBoxImage.Information);
@@ -51,6 +52,11 @@ namespace Reservoom.Commands
             catch (ReservationConflictException)
             {
                 MessageBox.Show("This room is already taken.", "Error", 
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Failed to make reservation.", "Error",
                     MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
