@@ -13,7 +13,7 @@
     FontSize="14"
     mc:Ignorable="d">
 
-    <ScrollViewer>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid MaxWidth="600" Margin="20,10">
             <Grid.Resources>
                 <DataTemplate DataType="{x:Type vms:MakeReservationViewModel}">
@@ -27,4 +27,4 @@
             <ContentControl Content="{Binding CurrentViewModel}" />
         </Grid>
     </ScrollViewer>
-</Window>
+</Window> 

@@ -14,6 +14,14 @@
           }
         }
       },
+      "LoadingSpinner.WPF/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/LoadingSpinnerControl.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Microsoft.Data.Sqlite.Core/6.0.7": {
         "dependencies": {
           "SQLitePCLRaw.core": "2.0.6"
@@ -403,6 +411,13 @@
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "LoadingSpinner.WPF/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-szXy14LPJMKOG51LfOP4nLx9CtqsODA52LzUHHN+N8WXTIxu99289aTZMHRywomsVPiOtA4RKgWqPm/uffOUmw==",
+      "path": "loadingspinner.wpf/1.0.0",
+      "hashPath": "loadingspinner.wpf.1.0.0.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/6.0.7": {
       "type": "package",

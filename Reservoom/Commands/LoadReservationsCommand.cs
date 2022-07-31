@@ -21,17 +21,21 @@ namespace Reservoom.Commands
 
         public override async Task ExecuteAsync(object parameter)
         {
+            _viewModel.ErrorMessage = string.Empty;
+            _viewModel.IsLoading = true;
+
             try
             {
                 await _hotelStore.Load();
-                
+
                 _viewModel.UpdateReservations(_hotelStore.Reservations);
             }
             catch (Exception)
             {
-                MessageBox.Show("Failed to load reservation.", "Error",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                _viewModel.ErrorMessage = "Failed to load reservation.";
             }
+
+            _viewModel.IsLoading = false;
         }
     }
 }
