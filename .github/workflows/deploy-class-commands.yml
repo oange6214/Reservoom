@@ -2,9 +2,13 @@ name: "Deploy Reservoom"
 
 on:
   push:
-    branches: [ "master" ]
+    tags: 
+      - "reservoom/v*"
+    #branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+    tags: 
+      - "reservoom/v*"
+    #branches: [ "master" ]
 
 env:
   PROJECT_PATH: Reservoom/Reservoom.csproj
