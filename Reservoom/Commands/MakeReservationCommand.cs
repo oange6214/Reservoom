@@ -13,10 +13,10 @@ namespace Reservoom.Commands
     public class MakeReservationCommand : AsyncCommand
     {
         private readonly HotelStore _hotelStore;
-        private readonly NavigationService _reservationViewNavigationService;
+        private readonly NavigationService<ReservationListingViewModel> _reservationViewNavigationService;
         private readonly MakeReservationViewModel _makeReservationViewModel;
 
-        public MakeReservationCommand(MakeReservationViewModel makeReservationViewModel, HotelStore hotelStore, NavigationService reservationViewNavigationService)
+        public MakeReservationCommand(MakeReservationViewModel makeReservationViewModel, HotelStore hotelStore, NavigationService<ReservationListingViewModel> reservationViewNavigationService)
         {
             _hotelStore = hotelStore;
             _reservationViewNavigationService = reservationViewNavigationService;
