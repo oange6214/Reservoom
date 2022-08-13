@@ -23,3 +23,6 @@ Please see: https://www.youtube.com/watch?v=fZxZswmC_BY&list=PLA8ZIAm2I03hS41Fy4
 #9  .NET Generic Host - WPF MVVM TUTORIAL 
 
 #10 Publishing - WPF MVVM TUTORIAL 
+	一、發佈 Release 版本: dotnet publish -c Release
+	二、發佈 Release 版本，並包含 .NET 套件: dotnet publish -c Release --self-contained
+	三、發佈 Release 版本，並包含 .NET 套件，且濃縮檔案數量: dotnet publish -c Release --self-contained -p:PublishSingleFile=true
