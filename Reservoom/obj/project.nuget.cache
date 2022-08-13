@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AbBug7cCVKFJAGLQiXujuYo7iJk2KerWZbetvtblZrhBjTdrZLsmVJ6npk0uXoGbxqZYoZBpIpFJ34xP5x8Y9w==",
+  "dgSpecHash": "0AgGQavewNUlxCW1xebwOAyw6u10wpZY1YT+yZujof65oSIQ4DtXqBlvomsx1UdTiJOgX1gl0ZBS4sHS26eO2Q==",
   "success": true,
   "projectFilePath": "J:\\C#\\NetCoreWebAPI\\Reservoom\\Reservoom\\Reservoom.csproj",
   "expectedPackageFiles": [
@@ -56,8 +56,8 @@
     "C:\\Users\\his62\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\his62\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\his62\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.6\\microsoft.netcore.app.runtime.win-x64.6.0.6.nupkg.sha512",
-    "C:\\Users\\his62\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.6\\microsoft.aspnetcore.app.runtime.win-x64.6.0.6.nupkg.sha512",
-    "C:\\Users\\his62\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.6\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.6.nupkg.sha512"
+    "C:\\Users\\his62\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.6\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.6.nupkg.sha512",
+    "C:\\Users\\his62\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.6\\microsoft.aspnetcore.app.runtime.win-x64.6.0.6.nupkg.sha512"
   ],
   "logs": []
 }
