@@ -2,8 +2,11 @@ name: "Deploy Class Commands"
 
 on:
   push:
-    tags:
-      - "class-commands/v*"
+    #tags:
+    #  - "class-commands/v*"
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 env:
   PROJECT_PATH: Reservoom/Reservoom.csproj
