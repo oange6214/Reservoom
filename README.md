@@ -23,6 +23,7 @@ Please see: https://www.youtube.com/watch?v=fZxZswmC_BY&list=PLA8ZIAm2I03hS41Fy4
 #9  .NET Generic Host - WPF MVVM TUTORIAL 
 
 #10 Publishing - WPF MVVM TUTORIAL 
+
 	*請注意：請在 專案 .csproj 的 <PropertyGroup> 中加入系統環境 <RuntimeIdentifier>win-x64</RuntimeIdentifier>。
 
 	發佈方式：
