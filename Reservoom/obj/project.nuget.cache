@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZUbdnm/qokCDUHjWiMOwHCAgImBsUv4K7j0n5ErfTmNSiMSU9A2tW3RKWUm+DwYMfvSVd6kP05XN0QeayIe5Gw==",
+  "dgSpecHash": "RydxUKKKGjTcVA/NDYg/Gkfr2ciDx16ukJvYYVtrF+Wx6sZ90zL/Il01A3gzSpc2xCT1ENuoh33SilbiKaZflQ==",
   "success": true,
-  "projectFilePath": "J:\\C#\\NetCoreWebAPI\\Reservoom\\Reservoom\\Reservoom.csproj",
+  "projectFilePath": "D:\\01_CSharp\\repos\\Reservoom\\Reservoom\\Reservoom.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
