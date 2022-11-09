@@ -23,3 +23,21 @@ Please see: https://www.youtube.com/watch?v=fZxZswmC_BY&list=PLA8ZIAm2I03hS41Fy4
 #9  .NET Generic Host - WPF MVVM TUTORIAL 
 
 #10 Publishing - WPF MVVM TUTORIAL 
+
+	*請注意：請在 專案 .csproj 的 <PropertyGroup> 中加入系統環境 <RuntimeIdentifier>win-x64</RuntimeIdentifier>。
+
+	發佈方式：
+		一、發佈 Release 版本: 
+		dotnet publish -c Release
+
+		二、發佈 Release 版本，並包含 .NET 套件: 
+		dotnet publish -c Release --self-contained
+
+		三、發佈 Release 版本，並包含 .NET 套件，且濃縮檔案數量: 
+		dotnet publish -c Release --self-contained -p:PublishSingleFile=true
+
+		四、發佈 Release 版本，並包含 .NET 套件，且濃縮為一個檔案: 
+		dotnet publish -c Release --self-contained -p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+
+		五、發佈 Release 版本，並包含 .NET 套件，且濃縮為一個檔案，設定執行環境 win-x64: 
+		dotnet publish -c Release --self-contained -r win-x64 -p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true

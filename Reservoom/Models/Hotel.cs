@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Reservoom.Models
 {
@@ -7,19 +8,19 @@ namespace Reservoom.Models
         private readonly ReservationBook _reservationBook;
         public string Name { get; }
 
-        public Hotel(string name)
+        public Hotel(string name, ReservationBook reservationBook)
         {
             Name = name;
-            _reservationBook = new ReservationBook();
+            _reservationBook = reservationBook;
         }
 
         /// <summary>
         /// Get all reservations.
         /// </summary>
         /// <returns>All reservation in the hotel reservation book.</returns>
-        public IEnumerable<Reservation> GetAllReservations()
+        public async Task<IEnumerable<Reservation>> GetAllReservations()
         {
-            return _reservationBook.GetAllReservations();
+            return await _reservationBook.GetAllReservations();
         }
 
         /// <summary>
@@ -27,9 +28,9 @@ namespace Reservoom.Models
         /// </summary>
         /// <param name="reservation">The incoming reservation.</param>
         /// <exception cref="ReservationClict"
-        public void MakeReservation(Reservation reservation)
+        public async Task MakeReservation(Reservation reservation)
         {
-            _reservationBook.AddReservation(reservation);
+            await _reservationBook.AddReservation(reservation);
         }
     }
 }

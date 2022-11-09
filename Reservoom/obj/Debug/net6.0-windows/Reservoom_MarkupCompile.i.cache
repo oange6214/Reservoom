@@ -12,8 +12,13 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\01_CSharp\repos\Reservoom\Reservoom\App.xaml
 3-651115779
 
+<<<<<<< HEAD
 22-572081635
 1942007414746
+=======
+401178880328
+2311209549361
+>>>>>>> b5c6d4fd4544aac43ff39c33948c0547093858c0
 MainWindow.xaml;Views\MakeReservationView.xaml;Views\ReservationListingView.xaml;
 
 False

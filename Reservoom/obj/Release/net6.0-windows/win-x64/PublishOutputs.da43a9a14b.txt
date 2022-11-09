@@ -1,0 +1,3 @@
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\bin\Release\net6.0-windows\win-x64\publish\Reservoom.pdb
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\bin\Release\net6.0-windows\win-x64\publish\appsettings.json
+J:\C#\NetCoreWebAPI\Reservoom\Reservoom\bin\Release\net6.0-windows\win-x64\publish\Reservoom.exe
